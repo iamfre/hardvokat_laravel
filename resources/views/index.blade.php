@@ -8,13 +8,14 @@
                 <!-- title -->
                 <h1 class="intro__title">Юридические услуги</h1>
                 <!-- sub title -->
-                <p class="intro__subtitle"> Оперативная юридическая поддержка частных клиентов, владельцев малого и среднего бизнеса в России, снижение рисков привлечения к ответственности. </p>
+                <p class="intro__subtitle"> Оперативная юридическая поддержка частных лиц, владельцев малого и среднего бизнеса в России, снижение рисков привлечения к ответственности. </p>
+                <div><a href="#price" class="btn-found">ПРАЙС ЛИСТ</a></div>
                 <!-- SEARCH FORM -->
                 <form class="search-form">
                     <fieldset class="search-form__wrap">
                         <p class="search-form__info">
                             <input type="text" name="user-like-to-do" class="search-form__field" placeholder="поиск на сайте">
-                            <a href="#!" class=""> <img src="./img/svg/new/icontexto-search-17_icon-icons.com_76913.ico" alt="НАЙТИ" class="button1"> </a>
+                            <a href="#!" class=""> <img src="/img/svg/search-black.ico" alt="НАЙТИ" class="button1"> </a>
                         </p>
                     </fieldset>
                 </form>
@@ -35,12 +36,12 @@
                         <p class="benefits__card-desc">Всесторонние споры, возникшие в процессе трудовой деятельности. </p> <a href="#!" class="benefits__card-more">Подробнее</a>
                     </div>
                     <div class="benefits__card">
-                        <div class="benefits__card-pic"> <img src="./img/svg/0.svg" alt="Ваш адвокат" class="benefits_card-thumb"> </div>
+                        <div class="benefits__card-pic"> <img src="/img/svg/family.svg" alt="Семейное право" class="benefits_card-thumb"> </div>
                         <h3 class="benefits__card-title">Семейное право</h3>
                         <p class="benefits__card-desc"> Посвящено рассмотрению проблем, связанных с брачно-семейными правоотношениями. </p> <a href="#!" class="benefits__card-more">Подробнее</a>
                     </div>
                     <div class="benefits__card">
-                        <div class="benefits__card-pic"> <img src="./img/svg/01.svg" alt="Гражданские дела" class="benefits_card-thumb"> </div>
+                        <div class="benefits__card-pic"> <img src="/img/svg/courthouse.svg" alt="Гражданские дела" class="benefits_card-thumb"> </div>
                         <h3 class="benefits__card-title">Гражданско-процессуальное право</h3>
                         <p class="benefits__card-desc"> Судопроизводство по гражданским делам. </p> <a href="#!" class="benefits__card-more">Подробнее</a>
                     </div>
@@ -48,12 +49,12 @@
                 <!-- cards 2nd row -->
                 <div class="benefits__cards">
                     <div class="benefits__card">
-                        <div class="benefits__card-pic"> <img src="./img/svg/015.svg" alt="Уголовные дела!" class="benefits_card-thumb"> </div>
+                        <div class="benefits__card-pic"> <img src="/img/svg/judge.svg" alt="Конституционное право" class="benefits_card-thumb"> </div>
                         <h3 class="benefits__card-title">Конституционное право</h3>
                         <p class="benefits__card-desc">Регулирует социально-значимые общественные отношения, основной источник это Конституция РФ. </p> <a href="#!" class="benefits__card-more">Подробнее</a>
                     </div>
                     <div class="benefits__card">
-                        <div class="benefits__card-pic"> <img src="./img/svg/18.svg" alt="Ваш адвокат" class="benefits_card-thumb"> </div>
+                        <div class="benefits__card-pic"> <img src="./img/svg/territory.svg" alt="Земельное право" class="benefits_card-thumb"> </div>
                         <h3 class="benefits__card-title">Земельное право</h3>
                         <p class="benefits__card-desc"> Предметом регулирования являются правовые отношения, связанные с землей. </p> <a href="#!" class="benefits__card-more">Подробнее</a>
                     </div>

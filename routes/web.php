@@ -13,10 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
-Route::get('/main', function () {
-    return view('layouts.main');
+
+
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
+
+    Route::get('/', function () {
+        return view('index');
+    })->name('index');
+
+    Route::get(
+        '/price',
+        'ServicesController@price'
+    )
+        ->name('price');
 });
