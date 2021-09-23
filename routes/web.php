@@ -22,15 +22,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         return view('index');
     })->name('index');
 
-    Route::get(
-        '/price',
-        'ServicesController@price'
-    )
-        ->name('price');
+    Route::get('/price', 'ServicesController@price')->name('price');
 
-    Route::get(
-        '/articles',
-        'ArticlesController@index'
-    )
-        ->name('articles');
+    Route::get('/articles', 'ArticlesController@index')->name('articles');
+
+    Route::get('/search', 'SearchController@SearchText')->name('SearchText');
 });
