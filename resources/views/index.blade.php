@@ -9,16 +9,17 @@
                 <h1 class="intro__title">Юридические услуги</h1>
                 <!-- sub title -->
                 <p class="intro__subtitle"> Оперативная юридическая поддержка частных лиц, владельцев малого и среднего бизнеса в России, снижение рисков привлечения к ответственности. </p>
-                <div><a href="#price" class="btn-found">ПРАЙС ЛИСТ</a></div>
+                <div><a href="{{ route('price') }}" class="btn-found">СПИСОК УСЛУГ</a></div>
                 <!-- SEARCH FORM -->
-                <form class="search-form">
+                <form class="search-form" action="" method="get">
                     <fieldset class="search-form__wrap">
                         <p class="search-form__info">
                             <input type="text" name="user-like-to-do" class="search-form__field" placeholder="поиск на сайте">
-                            <a href="#!" class=""> <img src="/img/svg/search-black.ico" alt="НАЙТИ" class="button1"> </a>
+                            <button type="submit" style="background: none; border: none"><img src="/img/svg/search-black.ico" alt="НАЙТИ" class="button1"> </button>
                         </p>
                     </fieldset>
                 </form>
+
                 <!-- /SEARCH FORM -->
             </div>
         </div>

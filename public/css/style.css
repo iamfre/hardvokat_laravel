@@ -598,7 +598,7 @@ a {
 .section-title::after {
     display: block;
     content: '';
-    width: 200px;
+    width: 100%;
     height: 3px;
     background-color: #006DFE;
     position: absolute;
@@ -631,8 +631,25 @@ a {
     z-index: 999;
 }
 
+.header_articles {
+    /* фиксируем меню навигации */
+    position: fixed;
+    /* прибьет к верхней части экрана */
+    top: 0;
+    /* выравниваем по левой части экрана */
+    left: 0;
+    /* чтобы всегда занимал 100% ширины экрана */
+    width: 100%;
+    /* плавный переход темного фона при скроле */
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    /* индекс чтобы хедер гарантированно был всегда поверх остальных блоков*/
+    z-index: 999;
+    background: rgba(38, 99, 210, 0.95);
+}
+
 .header_active {
-    background: rgb(38, 98, 210);
     background: rgba(38, 99, 210, 0.95);
 }
 
@@ -654,7 +671,6 @@ a {
     /* отступ блока header сверху и снизу */
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 .header__list {
@@ -802,18 +818,18 @@ a {
 
 .intro__title {
     font-weight: 500;
-    font-size: 48px;
-    line-height: 60px;
-    color: #0f2441;
-    max-width: 619px;
-    margin-bottom: 22px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    max-width: 950px;
+    margin-bottom: 10px;
     font-family: OpenSans-Bold;
 }
 
 .intro__subtitle {
     font-size: 20px;
     line-height: 22px;
-    color: #102746;
+    color: #000000;
     max-width: 555px;
     margin-bottom: 20px;
 }
@@ -1126,7 +1142,7 @@ a {
 	PICS
 =============================================================================*/
 .pics {
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 }
 
 .pics__caption {
@@ -1141,7 +1157,7 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 36px;
+    margin-bottom: 10px;
 }
 
 .pics__view-all {

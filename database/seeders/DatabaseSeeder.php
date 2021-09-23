@@ -17,42 +17,17 @@ class DatabaseSeeder extends Seeder
     {
         $faker = \Faker\Factory::create();
 
-
         Category::factory()->create([
-            'title' => 'Составление документов'
+            'title' => 'Представительство интересов в суде по гражданским делам, по делам об административных правонарушениях'
         ]);
         Category::factory()->create([
-            'title' => 'Жилищные'
+            'title' => 'Составление исковых заявлений, жалоб, иных процессуальных документов'
         ]);
         Category::factory()->create([
-            'title' => 'Семейные'
+            'title' => 'Обжалование постановлений об административных правонарушениях'
         ]);
         Category::factory()->create([
-            'title' => 'Имущество'
-        ]);
-        Category::factory()->create([
-            'title' => 'Наследство'
-        ]);
-        Category::factory()->create([
-            'title' => 'Земельные'
-        ]);
-        Category::factory()->create([
-            'title' => 'Страхование'
-        ]);
-        Category::factory()->create([
-            'title' => 'Установка фактов'
-        ]);
-        Category::factory()->create([
-            'title' => 'Финансовые'
-        ]);
-        Category::factory()->create([
-            'title' => 'Исполнительное'
-        ]);
-        Category::factory()->create([
-            'title' => 'Трудовые'
-        ]);
-        Category::factory()->create([
-            'title' => 'Обжалование'
+            'title' => 'Составление договоров'
         ]);
         Category::factory()->create([
             'title' => 'Разное'
@@ -61,7 +36,7 @@ class DatabaseSeeder extends Seeder
 
         for ($i = 1; $i < 6; $i++) {
             Service::factory()->create([
-                'title' => 'Разная услуга ' . $i,
+                'title' => 'Представительство интересов в суде ' . $i,
                 'category_id' => 1,
                 'price' => rand(500, 10000)
             ]);
@@ -69,7 +44,7 @@ class DatabaseSeeder extends Seeder
 
         for ($i = 1; $i < 6; $i++) {
             Service::factory()->create([
-                'title' => 'Жилищная услуга ' . $i,
+                'title' => 'Составление исковых заявлений ' . $i,
                 'category_id' => 2,
                 'price' => rand(500, 10000)
             ]);
@@ -77,8 +52,24 @@ class DatabaseSeeder extends Seeder
 
         for ($i = 1; $i < 6; $i++) {
             Service::factory()->create([
-                'title' => 'Составление документов услуга ' . $i,
+                'title' => 'Обжалование постановлений об административных правонарушениях ' . $i,
                 'category_id' => 3,
+                'price' => rand(500, 10000)
+            ]);
+        }
+
+        for ($i = 1; $i < 6; $i++) {
+            Service::factory()->create([
+                'title' => 'Составление договоров услуга ' . $i,
+                'category_id' => 4,
+                'price' => rand(500, 10000)
+            ]);
+        }
+
+        for ($i = 1; $i < 6; $i++) {
+            Service::factory()->create([
+                'title' => 'Разная услуга ' . $i,
+                'category_id' => 5,
                 'price' => rand(500, 10000)
             ]);
         }

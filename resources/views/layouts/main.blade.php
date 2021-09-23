@@ -49,8 +49,8 @@
                 <nav class="header__nav">
                     <ul class="header__list link-hover-center">
                         <li class="header__item"> <a href="{{ route('index') }}" class="header__link js-scroll">Главная</a> </li>
-                        <li class="header__item"> <a href="{{ route('price') }}" class="header__link js-scroll">Цены</a> </li>
-                        <li class="header__item"> <a href="#articles" class="header__link js-scroll">Статьи</a> </li>
+                        <li class="header__item"> <a href="{{ route('price') }}" class="header__link js-scroll">Услуги</a> </li>
+                        <li class="header__item"> <a href="{{ route('articles') }}" class="header__link js-scroll">Статьи</a> </li>
                     </ul>
                     <div class="header__nav-close"> <span class="header__nav-close-line"></span> <span class="header__nav-close-line"></span> </div>
                 </nav>

@@ -27,4 +27,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         'ServicesController@price'
     )
         ->name('price');
+
+    Route::get(
+        '/articles',
+        'ArticlesController@index'
+    )
+        ->name('articles');
 });
